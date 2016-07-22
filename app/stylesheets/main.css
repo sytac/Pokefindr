@@ -1,9 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Quicksand);
 
 *, *:before, *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background: #f0f0f0;
   color: #333;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.map {
+  position: absolute;
+  top: 60px; right: 0; bottom: 0; left: 0;
+}
+
+.app-nav {
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  z-index: 100;
+  padding: 0.2em 1em;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+}
+
+.app-nav ul {
+  padding: 0;
+}
+
+.app-nav li {
+  list-style: none;
+}
+
+.nav-btn {
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+  margin-right: 1em;
+}
+
+.poke-search {
+  display: flex;
+}
+
+.poke-search, .poke-search input {
+  flex-grow: 1;
+}
+
+.poke-search input {
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-family: 'Quicksand', sans-serif;
 }
